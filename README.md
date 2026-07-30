@@ -18,7 +18,7 @@ The framework combines explicit direction-aware vessel modeling, adaptive featur
 
 The complete pipeline contains three stages: offline template construction, network training, and inference. The offline stage builds a TADC template bank from vessel centerlines, direction fields, and structural confidence. During training, TADC and MFF provide structure-aware representations, while CE and TopoAlign jointly supervise regional accuracy and vascular continuity. During inference, the frozen model produces the segmentation prediction, which is further refined by VRP.
 
-![Overview of the VascLinkNet framework](assets/fig2-framework.png)
+![Overview of the VascLinkNet framework](assets/assets/fig2-framework.png)
 
 *Figure 2. Overview of the proposed VascLinkNet framework for structure-guided 3D vessel segmentation.*
 
