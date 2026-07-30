@@ -1,0 +1,29 @@
+{
+  "project": "VascLinkNet",
+  "task": "3D vessel segmentation",
+  "input": {
+    "layout": "NCDHW",
+    "spatial_dimensions": 3,
+    "channels": 1
+  },
+  "components": [
+    "Topology-Aware Directional Convolution",
+    "Mixture-of-Experts-guided Feature Fusion",
+    "TopoAlign loss",
+    "Vessel Refinement Processing"
+  ],
+  "evaluation_metrics": [
+    "Dice",
+    "clDice",
+    "Completeness",
+    "Betti error",
+    "HD95"
+  ],
+  "datasets": [
+    "TopCoW 2024",
+    "imageCAS",
+    "KiPA 22",
+    "Abdominal CTA",
+    "PARSE 2022"
+  ]
+}
